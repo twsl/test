@@ -18,6 +18,9 @@ This project represents date and time values using the
 | Ordinal date     | `2026-233`                  |
 | Time only        | `18:47:27`                  |
 | Date and time + fraction | `2026-08-21T18:47:27.123Z` |
+| Basic format date-time | `20260821T184727Z` |
+| Leap second | `2026-06-30T23:59:60Z` |
+| Expanded year | `+002026-08-21` |
 
 ## Format
 
@@ -32,6 +35,15 @@ This project represents date and time values using the
   (`01`–`53`) and `D` is the weekday number (`1`–`7`, Monday through Sunday).
 - Ordinal dates use the format `YYYY-DDD`, where `DDD` is the day of the year
   (`001`–`366`).
+- The examples above use the extended format (components separated by `-`, `:`,
+  and `T`). The basic format omits all separators (e.g. `20260821T184727Z`);
+  do not mix the two in a single value.
+- The `T` between date and time may be replaced by a space, but only by mutual
+  agreement between producer and consumer; always emit `T`.
+- Leap seconds are represented as `23:59:60` within the day they occur
+  (e.g. `2026-06-30T23:59:60Z`).
+- Years outside `0000`–`9999` require an expanded representation with an
+  explicit sign and six digits (e.g. `+002026-08-21`).
 
 ## Notes
 
