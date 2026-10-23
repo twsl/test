@@ -4,7 +4,8 @@ test
 
 # Date Time (ISO 8601)
 
-This project represents date and time values using the ISO 8601 standard.
+This project represents date and time values using the
+[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard.
 
 ## Examples
 
@@ -25,7 +26,12 @@ This project represents date and time values using the ISO 8601 standard.
   designator (`Z` for UTC or an offset like `+02:00`).
 - A decimal fraction of a second may follow the seconds, separated by `.`
   (e.g. `2026-08-21T18:47:27.123Z`).
-- Times are expressed in 24-hour clock format.
+- Times are expressed in 24-hour clock format; time-only values use
+  `HH:MM:SS`.
+- Week dates use the format `YYYY-Www-D`, where `Www` is the ISO week number
+  (`01`–`53`) and `D` is the weekday number (`1`–`7`, Monday through Sunday).
+- Ordinal dates use the format `YYYY-DDD`, where `DDD` is the day of the year
+  (`001`–`366`).
 
 ## Notes
 
