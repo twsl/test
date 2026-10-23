@@ -15,12 +15,16 @@ This project represents date and time values using the ISO 8601 standard.
 | Date and time + offset | `2026-08-21T18:47:27+02:00` |
 | Week date        | `2026-W34-5`                |
 | Ordinal date     | `2026-233`                  |
+| Time only        | `18:47:27`                  |
+| Date and time + fraction | `2026-08-21T18:47:27.123Z` |
 
 ## Format
 
 - Dates use the format `YYYY-MM-DD`.
 - Combined date-time strings use `YYYY-MM-DDTHH:MM:SS` with an optional timezone
   designator (`Z` for UTC or an offset like `+02:00`).
+- A decimal fraction of a second may follow the seconds, separated by `.`
+  (e.g. `2026-08-21T18:47:27.123Z`).
 - Times are expressed in 24-hour clock format.
 
 ## Notes
