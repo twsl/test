@@ -13,6 +13,7 @@ This project represents date and time values using the
 |------------------|-----------------------------|
 | Date             | `2026-08-21`                |
 | Date and time    | `2026-08-21T18:47:27Z`      |
+| Date and time, no timezone designator | `2026-08-21T18:47:27` |
 | Date and time + offset | `2026-08-21T18:47:27+02:00` |
 | Week date        | `2026-W34-5`                |
 | Ordinal date     | `2026-233`                  |
